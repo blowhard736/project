@@ -1,0 +1,58 @@
+@charset "utf-8";
+#login {
+	width: 30x;
+	height: 30px;
+	position: static;
+}
+body>h2{
+	vertical-align: left;
+}
+table{
+	margin-left:30px;
+	padding:5px;
+	font: 11px 굴림;
+}
+#loginbutton{
+		margin-left:10px;
+		width:115px;
+		height:70px;
+		font: 20px;
+		color:white;
+		-moz-border-radius-bottomright:10px;  			/* 탭모양 오른쪽,왼쪽아래를 둥글게 */
+		-moz-border-radius-bottomleft:10px;
+		-webkit-border-bottom-right-radius:10px;
+		-webkit-border-bottom-left-radius:10px;
+		-moz-border-radius-topright:10px;  			/* 탭모양 오른쪽,왼쪽아래를 둥글게 */
+		-moz-border-radius-topleft:10px;
+		-webkit-border-top-right-radius:10px;
+		-webkit-border-top-left-radius:10px;
+		background: rgba(0 ,120, 187, 1);
+}
+#regit{
+	margin-top:20px;
+	width:115px;
+}
+
+#find1{
+	margin-top:20px;
+	width: 115px;
+
+}
+#find2{
+	margin-top:20px;
+	width: 115px;
+
+}
+#text{
+	height:25px;
+	width:100%;
+}
+.sec{
+	background-image: url('question.png');
+	background-size:13px;
+	width: 15px;
+	height: 15px;
+}
+#text2{
+	opacity: 0.5;
+}

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>회원가입</title>
+<link type="text/css" rel="stylesheet" href="regit.css">
+</head>
+<body>
+<h2 align="center">회원가입</h2>
+<form name="regit" action="#" method="post">
+<table>
+<tr>
+	<td id="must">필수 항목</td>
+</tr>
+<tr>
+	<td>
+		<input type="text" name="id" placeholder="아이디"  autofocus required class="text">
+	</td>
+</tr>
+<tr>
+	<td>
+		<input type="password" name="pass" placeholder="비밀번호" required class="text"><br>
+		<input type="password" name="passcheck" placeholder="비밀번호 확인" required class="text">
+	</td>
+</tr>
+<tr>
+	<td>
+		<input type="text" name="name" placeholder="이름" required class="text">
+	</td>
+</tr>
+<tr>
+	<td>
+		<input type="text" name="mailhead" placeholder="이메일" required class="text" id="mail">
+		@
+		<select name="addr" required id="select">
+			<option value="" disabled selected >이메일 주소</option>
+			<option value="daum">daum.net</option>
+			<option value="naver">naver.com</option>
+			<option value="google">google.com</option>
+			<option value="yahoo">yahoo.com</option>
+		</select>
+	</td>
+</tr>
+<tr>
+	<td>
+		<input type="checkbox" name="condition" id="agelimit" value="agelimit"/>
+		<label for="agelimit" ><font size="1"><strong>만 14세 이상입니다.</strong></font></label><br>
+		<input type="checkbox" name="condition" id="useagree" value="useagree"/>
+		<label for="useagree" ><font size="1"><strong>이용약관 동의</strong></font></label>
+		<button type="button" onclick="alert('원래는 내용이 뜹니다 ㅠㅠ')" ><font size="1">내용보기</font></button><br>
+		<input type="checkbox" name="condition" id="infoagree" value="infoagree"/>
+		<label for="infoagree" ><font size="1"><strong>개인정보 수집 및 이용 동의</strong></font></label>
+		<button type="button" onclick="alert('원래는 내용이 뜹니다 ㅠㅠ')" ><font size="1">내용보기</font></button>
+	</td>
+</tr>
+<tr>
+	<td>
+		<table >
+			<tr>
+			<td align="center"><font size="1">구분</font></td>
+			<td align="center"><font size="1">목적</font></td>
+			<td align="center"><font size="1">항목</font></td>
+			<td align="center"><font size="1">보유 및 이용기간</font></td>
+			</tr>
+			<tr>
+			<td align="center"><font size="1"><strong>필수</strong></font></td>
+			<td align="center"><font size="1"><strong>이용자 식별,서비스 이행을 위한 연락</strong></font></td>
+			<td align="center"><font size="1"><strong>이름,아이디,비밀번호,이메일</strong></font></td>
+			<td align="center"><font size="1"><strong>회원탈퇴 후 5일 까지</strong></font></td>
+			</tr>
+		</table>
+	</td>
+</tr>
+</table><br><br>
+
+<table>
+<tr>
+	<td id="text3">선택 항목</td>
+</tr>
+<tr>
+	<td>생년월일</td>
+	<td>
+		<input type="date" name="date"/>
+	</td>
+</tr>
+<tr>
+	<td>성별</td>
+	<td>
+		<input type="radio" name="gender" id="male" value="male" checked/>
+		<label for="male">남자</label>
+		<input type="radio" name="gender" id="female" value="female" />
+		<label for="female">여자</label>
+	</td>
+</tr>
+<tr>
+	<td>
+		<input type="checkbox" name="wholeagree" id="agree" value="agree"/>
+		<label for="agree" ><strong>전체동의</strong></label>
+	</td>
+	<td>
+		<input type="checkbox" name="condition" id="yearagree" value="yearagree"/>
+		<label for="yearagree" ><font size="1"><strong>생년월일과 성별 수집 및 이용 동의</strong></font></label><br>
+		
+		<input type="checkbox" name="condition" id="mailagree" value="mailagree"/>
+		<label for="mailagree" ><font size="1"><strong>이메일 마케팅 수신 동의</strong></font></label><br>
+		
+		<input type="checkbox" name="condition" id="pinfoagree" value="pinfoagree"/>
+		<label for="pinfoagree" ><font size="1"><strong>개인정보 유효기간 3년 지정 (미동의시 1년)</strong></font></label>	
+	</td>
+</tr>
+<tr>
+	<td colspan="2">
+		<table>
+			<caption align="left">개인정보 수집 및 이용</caption>
+			<tr>
+			<td align="center"><font size="1">구분</font></td>
+			<td align="center"><font size="1">목적</font></td>
+			<td align="center"><font size="1">항목</font></td>
+			<td align="center"><font size="1">보유 및 이용기간</font></td>
+			</tr>
+			<tr>
+			<td align="center"><font size="1"><strong>선택</strong></font></td>
+			<td align="center"><font size="1"><strong>맞춤 정보 제공,마케팅</strong></font></td>
+			<td align="center"><font size="1"><strong>성별,생년월일</strong></font></td>
+			<td align="center"><font size="1"><strong>회원탈퇴 후 5일 까지</strong></font></td>
+			</tr>
+		</table>
+	</td>	
+</tr>
+<tr>
+	<td colspan="2" align="center">
+		<input type="image" src="regitbutton.jpg" width="150" height="40" alt="제출버튼">
+	</td>
+</tr>
+</table>
+	
+</form>
+</body>
+</html>

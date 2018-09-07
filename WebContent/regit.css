@@ -1,0 +1,28 @@
+@charset "utf-8";
+.text{
+	width:500px;
+	height: 20px;
+}
+#mail{
+	width:272px;
+	height: 20px;
+}
+table{
+	
+	padding:5px;
+	margin-left:auto;
+	margin-right:auto;
+}
+#select{
+	width:200px;
+	height: 30px;
+}
+#must{
+	color:orange;
+	font-size:20px;
+	font-weight: bold;
+}
+#text3{
+	opacity: 0.5;
+	font-size: 20;
+}

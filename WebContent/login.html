@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>로그인</title>
+<link type="text/css" rel="stylesheet" href="login.css">
+</head>
+<body>
+<h2><img src="login.jpg" id="login">로그인</h2>
+<form name="login" action="#" method="post">
+<table>
+<tr>
+<td>&nbsp;</td>
+<td>
+	<input type="radio" name="type" id="member" value="member" checked/>
+	<label for="member">회원</label>
+</td>
+<td>
+	<input type="radio" name="type" id="nonmember" value="nonmember"/>
+	<label for="nonmember">비회원</label>
+</td>
+<td>&nbsp;</td>
+</tr>
+
+<tr>
+<td>아이디</td>
+<td colspan="2"><input type="text" name="id" autofocus required id="text"/></td>
+<td rowspan="2"><button type="submit" id="loginbutton">LOGIN</button></td>
+</tr>
+
+<tr>
+<td>비밀번호</td>
+<td colspan="2"><input type="password" name="pass" required id="text"/></td>
+</tr>
+
+<tr>
+<td>&nbsp;</td>
+<td>
+	<input type="checkbox" name="loginoption" id="restore" value="restore"/>
+	<label for="restore" id="text2">아이디 저장</label>
+</td>
+<td>
+	<input type="checkbox" name="loginoption" id="security" value="security"/>
+	<label for="security" id="text2">키보드 보안접속</label>
+	<button type="button" onclick="alert('원래는 설명이 나올 겁니다 ㅠㅠ')" class="sec"></button>
+</td>
+<td>&nbsp;</td>
+</tr>
+
+<tr>
+<td>&nbsp;</td>
+<td>
+	<a href="regit.html"><button type="button" id="regit"><strong>회원가입</strong></button></a>	
+</td>
+
+<td>
+	<a href="regit.html"><button type="button" id="find1">아이디 찾기</button></a>	
+</td>
+<td>
+	<a href="regit.html"><button type="button" id="find2">비밀번호 찾기</button></a>	
+</td>
+</tr>
+
+</table>
+</form>
+</body>
+</html>
